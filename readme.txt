@@ -30,3 +30,11 @@ helm delete my-first-hello-world
 
 kubectl port-forward service/my-first-hello-world 8080:8080
 curl  10.103.104.232:8080/item
+
+======================================
+
+docker build --tag=test-k8s-image:latest .
+minikube image build -t test-k8s-image:latest .
+
+kubectl port-forward deployment/my-first-hello-world 8080:8080
+http://localhost:8080/item
