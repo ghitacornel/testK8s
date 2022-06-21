@@ -13,7 +13,7 @@ kubectl apply -f dashboard-adminuser.yaml
 kubectl apply -f cluster-admin.yaml
 
 5.
-kubectl -n kubernetes-dashboard create token admin-user
+kubectl -n kubernetes-dashboard create token admin-user >> out.txt
 
 6.
 copy token from command prompt

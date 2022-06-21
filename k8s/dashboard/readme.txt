@@ -8,3 +8,8 @@ kubectl proxy
 
 3.
 http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/
+
+
+====================
+kubectl delete clusterrolebinding kubernetes-dashboard
+minikube dashboard
