@@ -5,6 +5,7 @@ services:
     container_name: testK8sContainer
     ports:
       - "8080:8080"
+
 networks:
   pn:
     name: pn
