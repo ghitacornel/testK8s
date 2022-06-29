@@ -43,6 +43,7 @@ VERSION CHECKS
 kubectl version
 minikube version
 docker version
+helm version
 
 UPGRADES
 
