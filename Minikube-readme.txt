@@ -23,6 +23,15 @@ minikube dashboard
 -- create docker image
 minikube image build -t test-k8s-image:latest .
 
+-- deploy via helm
+helm install my-first-hello-world hello-world
+
+-- expose port
+kubectl port-forward deployment/my-first-hello-world 8080:8080
+
+-- test
+http://localhost:8080/item
+
 -- stop
 minikube stop
 
