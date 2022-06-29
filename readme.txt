@@ -1,8 +1,5 @@
 https://jhooq.com/building-first-helm-chart-with-spring-boot/
 
---  create Docker image
-docker build --tag=test-k8s-image:latest .
-
 -- create Helm files
 helm create hello-world
 
