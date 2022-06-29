@@ -32,6 +32,9 @@ kubectl port-forward deployment/my-first-hello-world 8080:8080
 -- test
 http://localhost:8080/item
 
+-- undeploy
+helm delete my-first-hello-world
+
 -- stop
 minikube stop
 
