@@ -28,6 +28,8 @@ helm delete my-first-hello-world
 kubectl port-forward service/my-first-hello-world 8080:8080
 curl  10.103.104.232:8080/item
 
+===================
+https://faun.pub/local-kubernetes-with-kind-helm-and-a-sample-service-4755e3e6eff4
 ======================================
 
 kubectl port-forward deployment/my-first-hello-world 8080:8080
