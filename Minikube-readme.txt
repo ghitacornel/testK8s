@@ -51,7 +51,7 @@ UPGRADES
 choco upgrade minikube
 
 -- upgrade k8s for minikube, from admin console
-minikube start --kubernetes-version=v1.24.1
+minikube start --kubernetes-version=v1.24.3
 
 -- upgrade k8s-cli
 choco install kubernetes-cli
