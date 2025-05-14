@@ -3,10 +3,7 @@ services:
   testK8sSpringBoot:
     image: test-k8s-image:latest
     container_name: testK8sContainer
+    build:
+      dockerfile: Dockerfile
     ports:
       - "8080:8080"
-
-networks:
-  pn:
-    name: pn
-    driver: bridge
