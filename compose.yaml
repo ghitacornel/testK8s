@@ -1,0 +1,44 @@
+services:
+  java-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: java-app
+    restart: unless-stopped
+    init: true
+    # env_file: ./.env  # Uncomment if .env file exists
+    # Expose the default Spring Boot port. Change if your app uses a different port.
+    ports:
+      - "8080:8080"
+    # If your app requires a database or other services, add them below and set depends_on
+    # depends_on:
+    #   - postgres
+    # networks:
+    #   - app-network
+
+# If your application requires a database (e.g., PostgreSQL), uncomment and configure below:
+#  postgres:
+#    image: postgres:latest
+#    container_name: postgres
+#    restart: unless-stopped
+#    environment:
+#      POSTGRES_USER: user
+#      POSTGRES_PASSWORD: password
+#      POSTGRES_DB: appdb
+#    volumes:
+#      - pgdata:/var/lib/postgresql/data
+#    healthcheck:
+#      test: ["CMD", "pg_isready", "-U", "user"]
+#      interval: 10s
+#      timeout: 5s
+#      retries: 5
+#    networks:
+#      - app-network
+
+# networks:
+#   app-network:
+#     driver: bridge
+
+# volumes:
+#   pgdata:
+#     driver: local
