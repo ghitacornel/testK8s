@@ -1,8 +1,0 @@
--- create Docker image
-docker build --tag=test-k8s-image:latest .
-
--- deploy docker-compose
-docker compose up
-
--- verify
-http://localhost:8080/item
